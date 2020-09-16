@@ -1,0 +1,1002 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* reset CSS */
+
+/* PC769~1440px SP375~768px */
+body {
+  background-color: white;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+}
+
+.header-inner {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 10px 0;
+  position: relative;
+}
+
+.header-logo img {
+  width: 130px;
+}
+
+.header-title {
+  position: absolute;
+  bottom: 20px;
+  left: 150px;
+}
+
+.header-title h1 {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #333333;
+}
+
+.header-contact {
+  color: white;
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 12px;
+  background-color: rgb(218, 117, 100);
+  padding: 15px 40px;
+  border-radius: 25px;
+}
+
+.btn:hover {
+  background-color: rgb(216, 73, 64);
+}
+
+.firstview {
+  background-image: url(sozai/main.jpg);
+  height: 570px;
+  width: 100%;
+  background-size: cover;
+}
+
+.firstview-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 150px 0 50px 0;
+}
+
+.firstview-top p {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 2;
+  text-align: center;
+}
+
+.firstview-inner img {
+  width: 300px;
+  margin-bottom: 40px;
+}
+
+.firstview-bottom p {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.contact-guide {
+  background-color: rgb(235, 185, 77);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-guide-top {
+  margin: 30px 0 15px 0;
+  line-height: 1.6;
+}
+
+.contact-guide-top p {
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.contact-guide-warning {
+  background-color: rgb(249, 242, 244);
+  padding: 5px 5px;
+  margin-bottom: 30px;
+}
+
+.contact-guide-warning p {
+  color: rgb(199, 37, 147);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.contact-guide-button {
+  color: white;
+  text-decoration: none;
+  display: block;
+  background-color: rgb(218, 117, 100);
+  padding: 40px 300px;
+  border-radius: 55px;
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+
+.contact-guide-bottom p {
+  font-weight: 600;
+  font-size: 21px;
+  color: white;
+  line-height: 3;
+}
+
+.tweet-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.tweet {
+  display: block;
+  color: white;
+  background-color: rgb(27, 149, 224);
+  font-size: 14px;
+  border-radius: 2px;
+  margin: 0 2px;
+  padding: 2px 5px;
+  text-decoration: none;
+}
+
+.good {
+  display: block;
+  color: white;
+  background-color: rgb(24, 119, 242);
+  font-size: 14px;
+  border-radius: 2px;
+  margin: 0 2px;
+  padding: 2px 5px;
+  text-decoration: none;
+}
+
+.share {
+  display: block;
+  color: white;
+  background-color: rgb(24, 119, 242);
+  font-size: 14px;
+  border-radius: 2px;
+  margin: 0 2px;
+  padding: 2px 5px;
+  text-decoration: none;
+}
+
+.intro {
+  background-image: url(sozai/introbottom.jpg);
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.intro-title {
+  padding: 20px 40px;
+  margin: 30px 0;
+  position: relative;
+}
+
+.intro-title h2:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-style: solid;
+  border-bottom: 5px;
+  border-right: 5px;
+  border-color: rgb(235, 185, 77);
+}
+
+.intro-title h2 {
+  font-weight: 600;
+  font-size: 28px;
+  color: #333333;
+  margin: 20px 0;
+}
+
+.intro-title h2:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border-style: solid;
+  border-top: 5px;
+  border-left: 5px;
+  border-color: rgb(235, 185, 77);
+}
+
+.intro-main1 {
+  margin-bottom: 20px;
+}
+
+.intro-main1 p {
+  color: #333333;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.intro-main2 {
+  margin-bottom: 20px;
+}
+
+.intro-main2 p {
+  color: #333333;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.intro-main3 p {
+  color: #333333;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.bold {
+  font-weight: 700;
+  border-bottom: solid 6px rgb(235, 185, 77);
+}
+
+.about {
+  background-color: rgb(254, 245, 224);
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-title {
+  padding: 20px 40px;
+  margin: 30px 0;
+  position: relative;
+}
+
+.about-title p {
+  font-weight: 600;
+  font-size: 28px;
+  color: #333333;
+  margin: 20px 0;
+}
+
+.about-title p:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-style: solid;
+  border-bottom: 5px;
+  border-right: 5px;
+  border-color: rgb(235, 185, 77);
+}
+
+.about-title p:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border-style: solid;
+  border-top: 5px;
+  border-left: 5px;
+  border-color: rgb(235, 185, 77);
+}
+
+.about-main {
+  margin-bottom: 30px;
+}
+
+.about-main p {
+  color: #333333;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.five-skills {
+  width: 1200px;
+  border: solid 4px rgb(235, 185, 77);
+  background-color: white;
+}
+
+.five-skills-title {
+  margin: 30px 0;
+}
+
+.five-skills-title p {
+  font-weight: 600;
+  font-size: 20px;
+  color: #333333;
+}
+
+.five-skills-main {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.skill {
+  margin: 0 10px;
+}
+
+.skill p {
+  color: #333333;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.skill img {
+  width: 60px;
+  height: 60px;
+}
+
+.about2 {
+  background-image: url(sozai/aboutsecondbg.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about2-title {
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.about2-title p {
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.about2-main {
+}
+
+.about2-main p {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.about2-main span {
+  color: rgb(235, 185, 77);
+}
+
+.about2-step {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.step {
+  background-color: white;
+  border-radius: 5px;
+  margin: 20px 10px;
+}
+
+.step-title {
+  background-color: rgb(235, 185, 77);
+  margin: 30px;
+  padding: 5px 120px;
+}
+
+.step-title p {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.step-main {
+  margin-bottom: 30px;
+}
+
+.step-main p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 2;
+}
+
+.difficult {
+  background-color: rgb(1, 110, 169);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.difficult-main {
+  margin: 40px 0;
+}
+
+.difficult-main p {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.difficult-main span {
+  color: rgb(235, 185, 77);
+}
+
+.study {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.study-title {
+  margin: 50px 0;
+}
+
+.study-title p {
+  color: #333333;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.study-main {
+  margin-bottom: 30px;
+}
+
+.study-main p {
+  color: #333333;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.study-about img {
+  width: 180px;
+  margin: 0 20px;
+}
+
+.study-bottom {
+  margin: 50px 0;
+}
+
+.study-bottom p {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.merit {
+  background-color: rgb(254, 245, 224);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.merit-title {
+  padding: 20px 250px;
+  margin: 30px 0;
+  position: relative;
+}
+
+.merit-title p {
+  font-weight: 600;
+  font-size: 28px;
+  color: #333333;
+  margin: 20px 0;
+}
+
+.merit-title span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.merit-title p:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-style: solid;
+  border-bottom: 5px;
+  border-right: 5px;
+  border-color: rgb(235, 185, 77);
+}
+
+.merit-title p:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border-style: solid;
+  border-top: 5px;
+  border-left: 5px;
+  border-color: rgb(235, 185, 77);
+}
+
+.merit-main {
+  display: flex;
+  text-align: left;
+}
+
+.merit-about {
+  width: 300px;
+  margin: 0 20px;
+}
+
+.merit-main-title {
+  margin: 10px 0;
+}
+
+.merit-about p {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.merit-main-title p {
+  color: rgb(235, 185, 77);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.merit-add {
+  width: 1200px;
+  border: solid 4px rgb(235, 185, 77);
+  background-color: white;
+}
+
+.merit-add-title {
+  margin: 30px 0 20px 0;
+}
+
+.merit-add-title p {
+  color: rgb(235, 185, 77);
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.merit-add2 {
+  margin-bottom: 20px;
+}
+
+.merit-add2 p {
+  color: #333333;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.merit-add3 {
+  margin-bottom: 40px;
+}
+
+.merit-add3 p {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.merit-bottom {
+  margin: 30px 0 30px 0;
+}
+
+.merit-bottom p {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.member {
+  background-image: url(sozai/memberbg.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.member-title {
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 50px 0 30px 0;
+}
+
+.member-main {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.member-about1 {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.member-about2 {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.member-about img {
+  border-radius: 150px;
+}
+
+.member-about-main {
+  width: 400px;
+  border: solid 4px white;
+  background-color: transparent;
+  margin: 160px 10px 0 10px;
+}
+
+.member-about-class {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  display: block;
+  margin: 50px 0 15px 0;
+}
+
+.member-about-name {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.member-about-content {
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.member-about-content p {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.member-about {
+  position: relative;
+}
+
+.member-about img {
+  position: absolute;
+  left: 125px;
+}
+
+.question {
+  background-color: rgb(235, 185, 77);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.question-title {
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  margin-top: 50px;
+}
+
+.question-title p {
+  color: rgb(235, 185, 77);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 80px;
+}
+
+.question-main {
+  padding: 20px 250px;
+  margin: 30px 0;
+  position: relative;
+}
+
+.question-main p {
+  font-weight: 600;
+  font-size: 28px;
+  color: white;
+  margin: 20px 0;
+}
+
+.question-main p:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-style: solid;
+  border-bottom: 5px;
+  border-right: 5px;
+  border-color: white;
+}
+
+.question-main p:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border-style: solid;
+  border-top: 5px;
+  border-left: 5px;
+  border-color: white;
+}
+
+.answer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.answer-title {
+  margin: 50px 0 30px 0;
+}
+
+.answer-title p {
+  color: #333333;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.answer-main {
+  margin-bottom: 30px;
+}
+
+.answer-main p {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.answer-warning {
+  margin-bottom: 30px;
+}
+
+.answer-warning p {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.voice {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.voice img {
+  width: 250px;
+  border: 4px solid rgb(235, 185, 77);
+}
+
+.voice-right {
+  width: 500px;
+  text-align: left;
+  margin: 20px 0 0 20px;
+}
+
+.voice-right p {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.voice-right span {
+  font-size: 15px;
+  font-style: italic;
+  text-decoration: underline;
+  display: block;
+  margin-top: 10px;
+}
+
+.contents {
+  background-image: url(sozai/contents.jpg);
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contents-title p {
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.contents-title {
+  margin: 50px 0 30px 0;
+}
+
+.contents-main p {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.contents-main {
+  margin-bottom: 40px;
+}
+
+.contents-menu {
+  display: flex;
+}
